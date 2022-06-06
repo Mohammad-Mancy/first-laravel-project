@@ -3,14 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class Pal extends Controller
+class palindromecontroller extends Controller
 {
     public function getPalin(){
         $arr = array('abc','cac','brb','lol','asdsa');
         $n = count($arr);
-        echo "hi";
-        // echo $this->palindrome($arr,$n);
+        // echo "hi";
+        echo $this->palindrome($arr,$n);
     }
     public function palindrome($arr,$n){
         $number_of_palin=0;
@@ -33,4 +34,8 @@ class Pal extends Controller
         }
         return true;
     }
+	/**
+	 */
+	// function __construct() {
+	// }
 }
