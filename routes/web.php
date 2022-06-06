@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/Palindromes',[Pal::class,'getPalin'])->name("get-pal");
+
 Route::get('/', function () {
     return view('welcome');
 });
